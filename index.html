@@ -1,142 +1,33 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-	<title>Wii HTML</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="icon" href="favico.png">
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  user-scalable=0">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="language" content="en/jp">
-	<meta name="title" content="Wii HTML">
-	<meta name="author" content="ダニー">
-	<meta name="copyright" content="©2000-2022 ダニー">
-	<meta name="robots" content="index, follow">
-	<meta name="subject" content="Wii HTML">
-	<meta name="keywords" content="Wii HTML">
-	<meta name="description" content="Wii HTML">
-	<meta name="classification" content="Wii HTML">
-	<meta property="og:type" content="website">
-	<meta property="og:title" content="Wii HTML">
-	<meta property="og:image" content="favico.png">
-	<meta property="og:locale" content="en/jp">
-	<meta property="og:site_name" content="Wii HTML">
-	<meta property="og:description" content="Wii HTML">
-	<link rel="apple-touch-icon" href="touch-icon-iphone.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="touch-icon-iphone-retina.png">
-	<link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">
-	<script src="time.js"></script>
-	<script src="hover.js"></script>
-	<script src="urlfix.js"></script>
-	<script>
-		urlchk();
-		var timerID = setInterval(function () {
-			gettime();
-			getdate();
-		}, 60 * 1);
-	</script>
-</head>
-<body>
-	<audio autoplay>
-		<source src="scroll.wav" type="audio/mp3">
-	</audio>
-	<audio autoplay loop>
-		<source src="bgm2.wav" type="audio/mp3">
-	</audio>
-	<audio id="hover">
-		<source src="hover.wav" type="audio/mp3">
-	</audio>
-	<div class="grid-main2">
-		<div class="grid-item2">
-				<div class="grid-backmob">
-					<div class="grid-item">
-					</div>
-				</div>
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | NSMB-MarioVsLuigi</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" width=960 height=540 style="width: 960px; height: 540px; background: #231F20"></canvas>
+    <script src="Build/MarioVsLuigi-WebGL.loader.js"></script>
+    <script>
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        // Mobile device style: fill the whole browser client area with the game canvas:
+        var meta = document.createElement('meta');
+        meta.name = 'viewport';
+        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+        document.getElementsByTagName('head')[0].appendChild(meta);
+      }
 
-			<div class="grid-channel" onmouseover="hoverfx()">
-				<div class="grid-item">
-					<a href="https://codeguyeli.github.io/MarioCube-WC24/news.html"><img src="assets/news.png" class="logo"></a>
-				</div>
-			</div>
-
-			<div class="grid-channel" onmouseover="hoverfx()">
-				<div class="grid-item">
-					<a href="https://codeguyeli.github.io/MarioCube-WC24/weather.html"><img src="assets/weather.png" class="logo"></a>
-				</div>
-			</div>
-
-			<div class="grid-channel" onmouseover="hoverfx()">
-				<div class="grid-item">
-					<a href="https://codeguyeli.github.io/MarioCube-WC24/"><img src="assets/disc.png" class="logo"></a>
-				</div>
-			</div>
-
-			<div class="grid-channel" onmouseover="hoverfx()">
-				<div class="grid-item">
-					<a href="https://codeguyeli.github.io/MarioCube-WC24/mii.html"><img src="assets/mii.png" class="logo"></a>
-				</div>
-			</div>
-
-			<br>
-
-			<div class="grid-channel" onmouseover="hoverfx()">
-				<div class="grid-item">
-					<a href="https://codeguyeli.github.io/MarioCube-WC24/friend.html"><img src="assets/tv.webp" class="logo"></a>
-				</div>
-			</div>
-			
-			<div class="grid-channel" onmouseover="hoverfx()">
-				<div class="grid-item">
-					<a href="https://codeguyeli.github.io/MarioCube-WC24/digicam.html"><img src="assets/print.webp" class="logo"></a>
-				</div>
-			</div>
-
-			<div class="grid-channel" onmouseover="hoverfx()">
-				<div class="grid-item">
-					<a href="https://codeguyeli.github.io/MarioCube-WC24/voting"><img src="assets/votes.webp" class="logo"></a>
-				</div>
-			</div>
-<div class="grid-channel" onmouseover="hoverfx()">
-				<div class="grid-item">
-					<a href="https://codeguyeli.github.io/MarioCube-WC24/nintendo"><img src="assets/nintendo.png" class="logo"></a>
-				</div>
-			</div>
-			<br>
-
-			<div class="grid-channel" onmouseover="hoverfx()">
-				<div class="grid-item">
-					<img src="empty.gif" class="logo">
-				</div>
-			</div>
-
-			<div class="grid-channel" onmouseover="hoverfx()">
-				<div class="grid-item">
-					<img src="empty.gif" class="logo">
-				</div>
-			</div>
-
-			<div class="grid-channel" onmouseover="hoverfx()">
-				<div class="grid-item">
-					<img src="empty.gif" class="logo">
-				</div>
-			</div>
-
-			<div class="grid-channel" onmouseover="hoverfx()">
-				<div class="grid-item">
-					<img src="empty.gif" class="logo">
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="grid-bottombar">
-		<div class="grid-item">
-			<h class="clock" id="time">TIME</h>
-			<br><div></div><br>
-			<h class="date" id="date" style="height: 48px;">DATE</h>
-		</div>
-	</div>
-</body>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/MarioVsLuigi-WebGL.data.unityweb",
+        frameworkUrl: "Build/MarioVsLuigi-WebGL.framework.js.unityweb",
+        codeUrl: "Build/MarioVsLuigi-WebGL.wasm.unityweb",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "ipodtouch0218",
+        productName: "NSMB-MarioVsLuigi",
+        productVersion: "1.7.1.0-beta",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+  </body>
 </html>
-
